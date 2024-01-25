@@ -75,7 +75,8 @@
 
    * Translate Alpaca instruct dataset to malayalam.
 
-		* For finetuning I am using translated alpaca dataset(English to Malayalam). [Alpaca dataset : https://huggingface.co/datasets/tatsu-lab/alpaca]
+		* For finetuning I am using translated alpaca dataset(English to Malayalam).
+ [Alpaca dataset : https://huggingface.co/datasets/tatsu-lab/alpaca]
 		* Run "translate_alpaca_dataset.py".This will create "translated_eng2mlm.csv" which will contain the translated version of Alpaca dataset.
 
    * Finetune the model on huggingface "VishnuPJ/Alpaca_Instruct_Malayalam" dataset.
