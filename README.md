@@ -13,8 +13,8 @@
 
 | Model                    | Type                        | Data              | Base Model           | # Params | Download Links                                                         |
 |--------------------------|-----------------------------|-------------------|----------------------|------|------------------------------------------------------------------------|
-| Malayalm LLaMA 7B Base      | Base model                  | 12GB              | LLaMA 7B             | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Base)     |
-| Malayalam LLaMA 7B Instruct  | Instruction following model | 52k instructions | Tamil LLaMA 7B Base  | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1) |
+| Malayalam LLaMA 7B Base      | Base model                  | 12GB              | LLaMA 7B             | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Base)     |
+| Malayalam LLaMA 7B Instruct  | Instruction following model | 52k instructions | Malayalam LLaMA 7B Base  | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1) |
 
 ### Quantized Version of Available Models
 
