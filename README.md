@@ -26,6 +26,8 @@
 
 
 ## Getting Started
+
+### Steps to run pretrainnig and finetuning
 1) Download the dataset
 
 	* Go to Data folder.
@@ -102,3 +104,9 @@
 7) Push to hub.
 
 	* Run "Utils\push2hub.py".
+
+### Reference
+	* https://arxiv.org/abs/2302.03241
+ 	* https://arxiv.org/abs/2307.09288
+	* https://github.com/abhinand5/tamil-llama/blob/main
+ 	* https://github.com/ymcui/Chinese-LLaMA-Alpaca/tree/main
