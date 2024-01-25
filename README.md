@@ -2,14 +2,28 @@
 - A 7B Llama-2 Indic model.
 - Continually LoRA PreTrained and FineTuned on “Malayalam” token.
 
-# Datasets Used
+## Datasets Used
   * For Pretraining
 	* https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz
  	* https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml
   * For Finetuning
   	* https://huggingface.co/datasets/VishnuPJ/Alpaca_Instruct_Malayalam 
- 
-# Getting Started
+
+ ## Available Models
+
+| Model                    | Type                        | Data              | Base Model           | # Params | Download Links                                                         |
+|--------------------------|-----------------------------|-------------------|----------------------|------|------------------------------------------------------------------------|
+| Malayalm LLaMA 7B Base      | Base model                  | 12GB              | LLaMA 7B             | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Base)     |
+| Malayalam LLaMA 7B Instruct  | Instruction following model | 145k instructions | Tamil LLaMA 7B Base  | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1) |
+
+### Quantized Version of Available Models
+
+| Model                    | Format | Bits                 | Download Links                                                               |
+|--------------------------|--------|----------------------|------------------------------------------------------------------------------|
+| Malayalam LLaMA 7B Base      | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1_GGUF)      |
+
+
+## Getting Started
 1) Download the dataset
 
 	* Go to Data folder.
