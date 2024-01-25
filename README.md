@@ -41,13 +41,13 @@
    * Merge Pretrained LORA weights with Base Llama2 weights.
 
 		* Run the command,
-			""
+		```bash
 			python merge_lora_with_llama.py \
     		--base_model path/to/llama/model \  # llama_7b_hf
     		--lora_model path/to/first/lora/model [path/to/second/lora/model] \ # checkpoint-22500
     		--output_type [pth|huggingface] \ # huggingface
     		--output_dir path/to/output/dir  # merged_lora_llama_pretrained_hf
-    		""
+    		```
     	* This will merge the base Llama2 and pretrained LORA weights into a folder "merged_lora_llama_pretrained_hf"
 
 4) Finetune
