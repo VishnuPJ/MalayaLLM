@@ -13,7 +13,7 @@
 
 2) Tokenization
 	
-	2.1 Create Malayalam token files.
+   * Create Malayalam token files.
 
 		* Go to Tokenizer folder.
 		* Run "tokenizer.py".This will create malayalam tokens from the text file(s) provided.(You can also give the path to a single ".txt" file also)
