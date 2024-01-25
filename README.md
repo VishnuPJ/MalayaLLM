@@ -19,26 +19,26 @@
 		* Run "tokenizer.py".This will create malayalam tokens from the text file(s) provided.(You can also give the path to a single ".txt" file also)
 		* It will create two files "MalayaLLM.model" and "MalayaLLM.vocab".
 
-	2.2 Merge Malayalam tokens with 32k LLama2 tokens.
+   * Merge Malayalam tokens with 32k LLama2 tokens.
 
 		* Run "merge_tokenizer.py".It will generate two folders "merged_tokenizer_sentencepiece" and "merged_tokenizer_huggingface".
 		* "merged_tokenizer_huggingface" will contain the merged tokenizer.
 
 3) Pretrain
 
-	3.1 Download base Llama-2 model.
+   * Download base Llama-2 model.
 
 		* Go to Pretrain folder.
 		* Run "download_base_llama.py". This will download Llam2 7B base model to "llama_7b_hf" folder.
 
-	3.2 Pretrain.
+   * Pretrain.
 
 		* Create two folders "output_dir" and "cache_dir".
 		* Modify "run_pt.sh".
 		* Run "./run_pt.sh". (This will start the pretraining and checkpoints will be saved to "output_dir".) 
 		* If you want to resume training from checkpoints , comment "--overwrite_output_dir" in "run_pt.sh" and run again.
 
-	3.3 Merge Pretrained LORA weights with Base Llama2 weights.
+   * Merge Pretrained LORA weights with Base Llama2 weights.
 
 		* Run the command,
 			""
@@ -52,12 +52,12 @@
 
 4) Finetune
 
-	4.1 Translate Alpaca instruct dataset to malayalam.
+   * Translate Alpaca instruct dataset to malayalam.
 
 		* For finetuning I am using translated alpaca dataset(English to Malayalam). [https://huggingface.co/datasets/tatsu-lab/alpaca]
 		* Run "translate_alpaca_dataset.py".This will create "translated_eng2mlm.csv" which will contain the translated version of Alpaca dataset.
 
-	4.2 Finetune the model on huggingface "VishnuPJ/Alpaca_Instruct_Malayalam" dataset.
+   * Finetune the model on huggingface "VishnuPJ/Alpaca_Instruct_Malayalam" dataset.
 
 		* Run "finetune.py".
 		* Finetuned LORA weights will be saved to "output_finetune" folder.
