@@ -20,7 +20,7 @@
 
 | Model                    | Format | Bits                 | Download Links                                                               |
 |--------------------------|--------|----------------------|------------------------------------------------------------------------------|
-| Malayalam LLaMA 7B Base      | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1_GGUF)      |
+| Malayalam LLaMA 7B Instruct      | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1_GGUF)      |
 
 
 ## Getting Started
