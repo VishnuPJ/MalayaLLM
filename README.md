@@ -2,7 +2,14 @@
 - A 7B Llama-2 Indic model.
 - Continually LoRA PreTrained and FineTuned on “Malayalam” token.
 
-
+# Datasets Used
+  * For Pretraining
+	* https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz
+ 	* https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml
+  * For Finetuning
+    	* https://huggingface.co/datasets/VishnuPJ/Alpaca_Instruct_Malayalam 
+ 
+# Getting Started
 1) Download the dataset
 
 	* Go to Data folder.
