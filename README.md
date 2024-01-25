@@ -1,8 +1,8 @@
 # MalayaLLM [മലയാളം/Malayalam]
-- A 7B Llama-2 Indic model.
-- Continually LoRA PreTrained and FineTuned on “Malayalam” token.
 <img src="Assets/Baby_MalayaLLM.png" alt="Tamil LLaMA Image" width="300" height="auto">
 
+- A 7B Llama-2 Indic model.
+- Continually LoRA PreTrained and FineTuned on “Malayalam” token.
 
 ## Datasets Used
   * For Pretraining
