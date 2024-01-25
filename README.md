@@ -27,7 +27,7 @@
 
 ## Getting Started
 
-### Steps to run pretrainnig and finetuning
+### Steps to run pretraining and finetuning
 1) Download the dataset
 
 	* Go to Data folder.
