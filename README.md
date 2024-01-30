@@ -5,7 +5,7 @@
 - Continually LoRA PreTrained and FineTuned on “Malayalam” token.
 
 ## Datasets Used
-  * For Pretraining
+  * For Pretraining/Tokenization
 	* https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz
  	* https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml
   * For Finetuning
