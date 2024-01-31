@@ -43,8 +43,6 @@ The MalayaLLM models have been improved and customized to incorporate a comprehe
 ```python
 import os
 import torch
-from datasets import load_dataset
-from peft import LoraConfig, PeftModel
 from transformers import (
     AutoModelForCausalLM,
     AutoTokenizer,
@@ -54,7 +52,7 @@ from transformers import (
     logging,
     pipeline,
 )
-from trl import SFTTrainer
+
 model_name = "VishnuPJ/MalayaLLM_7B_Instruct_v0.1"
 print(f"Loading model...")
 # Load base model
