@@ -49,7 +49,7 @@ from transformers import (
     pipeline,
 )
 
-model_name = "VishnuPJ/MalayaLLM_7B_Instruct_v0.1"
+model_name = "VishnuPJ/MalayaLLM_7B_Instruct_v0.2"
 print(f"Loading model...")
 # Load base model
 base_model = AutoModelForCausalLM.from_pretrained(
