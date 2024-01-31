@@ -169,5 +169,5 @@ Enter instruction (or 'exit' to end):
 ### Reference
 	* [Continual Pre-training of Language Models](https://arxiv.org/abs/2302.03241)
  	* [Llama 2](https://arxiv.org/abs/2307.09288)
-        * [Chinese-LLaMA](https://github.com/ymcui/Chinese-LLaMA-Alpaca/tree/main)
+  	* [Chinese-LLaMA](https://github.com/ymcui/Chinese-LLaMA-Alpaca/tree/main)
 	* [tamil-llama](https://github.com/abhinand5/tamil-llama/blob/main)
