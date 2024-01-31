@@ -27,16 +27,16 @@ The MalayaLLM models have been improved and customized to incorporate a comprehe
 
 | Model                    | Type                        | Data              | Base Model           | # Params | Download Links                                                         |
 |--------------------------|-----------------------------|-------------------|----------------------|------|------------------------------------------------------------------------|
-| Malayalam LLaMA 7B Base   #v0.1   | Base model                  | 12GB              | LLaMA 7B             | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Base)     |
-| Malayalam LLaMA 7B Instruct  #v0.1| Instruction following model | 52k instructions | Malayalam LLaMA 7B Base  | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1) |
-| Malayalam LLaMA 7B Instruct  #v0.2| Instruction following model | 52k instructions | Malayalam LLaMA 7B Base  | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.2) |
+| MalayaLLM 7B Base   #v0.1   | Base model                  | 12GB              | LLaMA 7B             | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Base)     |
+| MalayaLLM 7B Instruct  #v0.1| Instruction following model | 52k instructions | MalayaLLM 7B Base  | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1) |
+| MalayaLLM 7B Instruct  #v0.2| Instruction following model | 52k instructions | MalayaLLM 7B Base  | 7B   | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.2) |
 
 ### Quantized Version of Available Models
 
 | Model                    | Format | Bits                 | Download Links                                                               |
 |--------------------------|--------|----------------------|------------------------------------------------------------------------------|
-| Malayalam LLaMA 7B Instruct   #v0.1  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1_GGUF)      |
-| Malayalam LLaMA 7B Instruct   #v0.2  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.2_GGUF)      |
+| MalayaLLM 7B Instruct   #v0.1  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1_GGUF)      |
+| MalayaLLM 7B Instruct   #v0.2  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.2_GGUF)      |
 
 ## A simple example code
 
