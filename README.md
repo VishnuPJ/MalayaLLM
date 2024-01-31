@@ -45,9 +45,9 @@ The MalayaLLM models have been improved and customized to incorporate a comprehe
 1) Download the dataset
 
 	* Go to Data folder.
-	* Download all the file in the link "https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml" to a folder "data/CulturaX".
+	* Download all the file in the link "[CulturaX](https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml)" to a folder "data/CulturaX".
     * Run "parquet2txt.py" .It will create a file called "data_clm.txt".
-	* Download "https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz" and unzip it.
+	* Download "[ai4bharat](https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz)" and unzip it.
 	* Copy "data_clm.txt" and "ml.txt" to a folder "data/ml". 
 
 2) Tokenization
@@ -94,7 +94,7 @@ The MalayaLLM models have been improved and customized to incorporate a comprehe
    * Translate Alpaca instruct dataset to malayalam.
 
 		* For finetuning I am using translated alpaca dataset(English to Malayalam).
- [Alpaca dataset : https://huggingface.co/datasets/tatsu-lab/alpaca]
+ [Alpaca dataset](https://huggingface.co/datasets/tatsu-lab/alpaca)
 		* Run "translate_alpaca_dataset.py".This will create "translated_eng2mlm.csv" which will contain the translated version of Alpaca dataset.
 
    * Finetune the model on huggingface "VishnuPJ/Alpaca_Instruct_Malayalam" dataset.
@@ -108,12 +108,12 @@ The MalayaLLM models have been improved and customized to incorporate a comprehe
 	* If you want you can merge the finetuned LORA  weights in "output_finetune" folder with the MalayaLLM pretrained weight in "merged_lora_llama_pretrained_hf" folder using "merge_lora_with_llama.py".
 	* Otherwise we will load both the weight files and merge while inferencing.
 	* Run "infer.py" for inferencing. Change the instuction to generate the response.
-	* You can use "https://varnamproject.com/editor/#/" to transliterate from Manglish to Malyalam.
+	* You can use "[Transliterate](https://www.google.com/intl/ml/inputtools/try/)" to transliterate from Manglish to Malayalam.
 
 
 6) Generate .GGUF model
 
-	* Refer the link [https://www.substratus.ai/blog/converting-hf-model-gguf-model/]
+	* Refer the link [hf-gguf](https://www.substratus.ai/blog/converting-hf-model-gguf-model/)
 
 7) Push to hub.
 
