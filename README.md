@@ -2,14 +2,26 @@
 <img src="Assets/Baby_MalayaLLM.png" alt="MalayaLLM Image" width="300" height="auto">
 
 - A 7B Llama-2 Indic model.
-- Continually LoRA PreTrained and FineTuned on “Malayalam” token.
+- Continually LoRA PreTrained and FineTuned on “Malayalam” tokens.
+
+This is an attempt to construct a Language Model (LLM) focused on **generative AI for Malayalam language**. While several LLMs are proficient in supporting multiple languages, including Malayalam, enhancing their performance for specific tasks such as content generation and question answering specifically in Malayalam can be achieved through dedicated training on a Malayalam dataset. In pursuit of this, I've undertaken the **continuous pre-training of the LLAMA2 model using a comprehensive Malayalam dataset**.
+
+The model is currently in its early stages, and ongoing training and fine-tuning with a more comprehensive dataset are necessary to enhance its performance. I will consistently provide updated revisions to the model.
+
+# Model description
+The MalayaLLM models have been improved and customized to incorporate a comprehensive Malayalam vocabulary comprising approximately 18,000 tokens, expanding upon the groundwork laid by the original LLaMA-2.
+
+- **Model type:** A 7B LLaMA2 pretrained model on Malayalam .
+- **Language(s):** Malayalam and English
+- **Source Model:** [meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf)
+- **Training Precision:** `float16`
 
 ## Datasets Used
   * For Pretraining/Tokenization
-	* https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz
- 	* https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml
+	* [ai4bharat](https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz)
+ 	* [CulturaX](https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml)
   * For Finetuning
-  	* https://huggingface.co/datasets/VishnuPJ/Alpaca_Instruct_Malayalam 
+  	* [Alpaca_Instruct_Malayalam](https://huggingface.co/datasets/VishnuPJ/Alpaca_Instruct_Malayalam)
 
  ## Available Models
 
@@ -108,7 +120,7 @@
 	* Run "Utils\push2hub.py".
 
 ### Reference
-	* https://arxiv.org/abs/2302.03241
- 	* https://arxiv.org/abs/2307.09288
-	* https://github.com/abhinand5/tamil-llama/blob/main
- 	* https://github.com/ymcui/Chinese-LLaMA-Alpaca/tree/main
+	* [Continual Pre-training of Language Models](https://arxiv.org/abs/2302.03241)
+ 	* [Llama 2](https://arxiv.org/abs/2307.09288)
+        * [Chinese-LLaMA](https://github.com/ymcui/Chinese-LLaMA-Alpaca/tree/main)
+	* [tamil-llama](https://github.com/abhinand5/tamil-llama/blob/main)
