@@ -89,11 +89,11 @@ Enter instruction (or 'exit' to end): exit
 ## Getting Started
 
 ### Steps to run pretraining and finetuning
-1) Download the dataset
+1) Download the dataset.
 
 	* Go to Data folder.
 	* Download all the file in the link "[CulturaX](https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml)" to a folder "data/CulturaX".
-    * Run "parquet2txt.py" .It will create a file called "data_clm.txt".
+    * Run "parquet2txt.py" .It will create a file "data_clm.txt".
 	* Download "[ai4bharat](https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz)" and unzip it.
 	* Copy "data_clm.txt" and "ml.txt" to a folder "data/ml". 
 
@@ -112,10 +112,10 @@ Enter instruction (or 'exit' to end): exit
 
 3) Pretrain
 
-   * Download base Llama-2 model.
+   * Download base LLaMA2 model.
 
 		* Go to Pretrain folder.
-		* Run "download_base_llama.py". This will download Llam2 7B base model to "llama_7b_hf" folder.
+		* Run "download_base_llama.py". This will download LLaMA2 7B base model to "llama_7b_hf" folder.
 
    * Pretrain.
 
@@ -134,11 +134,11 @@ Enter instruction (or 'exit' to end): exit
     		--output_type [pth|huggingface] \ # huggingface
     		--output_dir path/to/output/dir  # merged_lora_llama_pretrained_hf
         ```
-    	* This will merge the base Llama2 and pretrained LORA weights into a folder "merged_lora_llama_pretrained_hf"
+    	* This will merge the base LLaMA2 and pretrained LORA weights into a folder "merged_lora_llama_pretrained_hf"
 
 4) Finetune
 
-   * Translate Alpaca instruct dataset to malayalam.
+   * Translate Alpaca instruct dataset to Malayalam.
 
 		* For finetuning I am using translated alpaca dataset(English to Malayalam).
  [Alpaca dataset](https://huggingface.co/datasets/tatsu-lab/alpaca)
