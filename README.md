@@ -38,6 +38,59 @@ The MalayaLLM models have been improved and customized to incorporate a comprehe
 | Malayalam LLaMA 7B Instruct   #v0.1  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1_GGUF)      |
 | Malayalam LLaMA 7B Instruct   #v0.2  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.2_GGUF)      |
 
+## A simple example code
+
+```python
+import os
+import torch
+from datasets import load_dataset
+from peft import LoraConfig, PeftModel
+from transformers import (
+    AutoModelForCausalLM,
+    AutoTokenizer,
+    BitsAndBytesConfig,
+    HfArgumentParser,
+    TrainingArguments,
+    logging,
+    pipeline,
+)
+from trl import SFTTrainer
+model_name = "VishnuPJ/MalayaLLM_7B_Instruct_v0.1"
+print(f"Loading model...")
+# Load base model
+base_model = AutoModelForCausalLM.from_pretrained(
+    model_name,
+    low_cpu_mem_usage=True,
+    return_dict=True,
+    torch_dtype=torch.float16,
+    device_map="auto",
+)
+
+tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+tokenizer.pad_token = tokenizer.eos_token
+tokenizer.padding_side = "right"
+
+pipe = pipeline(task="text-generation", model=base_model, tokenizer=tokenizer, max_length=200)
+sys_prompt = "ഒരു ടാസ്ക് വിവരിക്കുന്ന ഒരു നിർദ്ദേശം ചുവടെയുണ്ട്. അഭ്യർത്ഥന ശരിയായി പൂർത്തിയാക്കുന്ന ഒരു പ്രതികരണം എഴുതുക."
+
+while True:
+    inst = input("Enter instruction (or 'exit' to end): ")
+    if inst.lower() == 'exit':
+        break
+    # Generate response using the user-provided instruction
+    result = pipe(f"{sys_prompt} ### Instruction: {inst} ### Response:")
+    # Print the generated text
+    print(result[0]['generated_text'])
+```
+
+## Example Output
+```
+Enter instruction (or 'exit' to end): സൂര്യൻ ഉദിക്കുന്ന ദിശ ഏതെന്നു പറയുക .
+ഒരു ടാസ്ക് വിവരിക്കുന്ന ഒരു നിർദ്ദേശം ചുവടെയുണ്ട്. അഭ്യർത്ഥന ശരിയായി പൂർത്തിയാക്കുന്ന ഒരു പ്രതികരണം എഴുതുക. ### Instruction: സൂര്യൻ ഉദിക്കുന്ന ദിശ ഏതെന്നു പറയുക . ### Response: സൂര്യൻ ഉദിക്കുന്ന ദിശ കിഴക്കായിരിക്കും.
+Enter instruction (or 'exit' to end): Where does the Sun rise?
+ഒരു ടാസ്ക് വിവരിക്കുന്ന ഒരു നിർദ്ദേശം ചുവടെയുണ്ട്. അഭ്യർത്ഥന ശരിയായി പൂർത്തിയാക്കുന്ന ഒരു പ്രതികരണം എഴുതുക. ### Instruction: Where does the Sun rise? ### Response: The Sun rises in the east.
+Enter instruction (or 'exit' to end):
+```
 
 ## Getting Started
 
