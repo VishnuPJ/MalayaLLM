@@ -87,6 +87,8 @@ Enter instruction (or 'exit' to end): exit
 ```
 ## Demo Video
 
+Below is a brief video highlighting the model's bilingual ability to converse in both Malayalam and English.
+In this demonstration, I utilize Google's transliteration tool to seamlessly translate from Manglish to Malayalam. Subsequently, I copied the translated text into the prompt console for further interaction.
 
 https://github.com/VishnuPJ/MalayaLLM/assets/54801493/c294b26d-66ef-4e07-94f0-fc81f2d1e026
 
