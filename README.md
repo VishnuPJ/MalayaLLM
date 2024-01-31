@@ -74,7 +74,7 @@ while True:
     # Generate response using the user-provided instruction
     result = pipe(f"{sys_prompt} ### Instruction: {inst} ### Response:")
     # Print the generated text
-    print(result[0]['generated_text'])
+    print(result[0]['generated_text'].split("### Response:")[1])
 ```
 
 ## Example Output
