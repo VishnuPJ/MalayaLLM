@@ -85,6 +85,11 @@ Enter instruction (or 'exit' to end): Where does the Sun rise?
 ഒരു ടാസ്ക് വിവരിക്കുന്ന ഒരു നിർദ്ദേശം ചുവടെയുണ്ട്. അഭ്യർത്ഥന ശരിയായി പൂർത്തിയാക്കുന്ന ഒരു പ്രതികരണം എഴുതുക. ### Instruction: Where does the Sun rise? ### Response: The Sun rises in the east.
 Enter instruction (or 'exit' to end): exit
 ```
+## Demo Video
+
+
+https://github.com/VishnuPJ/MalayaLLM/assets/54801493/c294b26d-66ef-4e07-94f0-fc81f2d1e026
+
 
 ## Getting Started
 
