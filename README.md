@@ -23,8 +23,8 @@
 
 | Model                    | Format | Bits                 | Download Links                                                               |
 |--------------------------|--------|----------------------|------------------------------------------------------------------------------|
-| Malayalam LLaMA 7B Instruct   v0.1  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1_GGUF)      |
-| Malayalam LLaMA 7B Instruct   v0.2  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.2_GGUF)      |
+| Malayalam LLaMA 7B Instruct   #v0.1  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.1_GGUF)      |
+| Malayalam LLaMA 7B Instruct   #v0.2  | GGUF   | Q8_0 | [HF Hub](https://huggingface.co/VishnuPJ/MalayaLLM_7B_Instruct_v0.2_GGUF)      |
 
 
 ## Getting Started
