@@ -20,6 +20,7 @@ The MalayaLLM models have been improved and customized to incorporate a comprehe
   * For Pretraining/Tokenization
 	* [ai4bharat](https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz)
  	* [CulturaX](https://huggingface.co/datasets/uonlp/CulturaX/tree/main/ml)
+        * https://github.com/AI4Bharat/IndicBERT/tree/main#indiccorp-v2 
   * For Finetuning
   	* [Alpaca_Instruct_Malayalam](https://huggingface.co/datasets/VishnuPJ/Alpaca_Instruct_Malayalam)
 
