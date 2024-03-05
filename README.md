@@ -4,7 +4,7 @@
 - A 7B LLaMA-2 Indic model.
 - Continually LoRA PreTrained and FineTuned on “Malayalam” tokens.
 
-This is an attempt to construct a Language Model (LLM) focused on **generative AI for Malayalam language**. While several LLMs are proficient in supporting multiple languages, including Malayalam, enhancing their performance for specific tasks such as content generation and question answering specifically in Malayalam can be achieved through dedicated training on a Malayalam dataset. In pursuit of this, I've undertaken the **continuous pre-training of the LLAMA2 model using a comprehensive Malayalam dataset**.
+This is an attempt to construct a Large Language Model (LLM) focused on **generative AI for Malayalam language**. While several LLMs are proficient in supporting multiple languages, including Malayalam, enhancing their performance for specific tasks such as content generation and question answering specifically in Malayalam can be achieved through dedicated training on a Malayalam dataset. In pursuit of this, I've undertaken the **continuous pre-training of the LLAMA2 model using a comprehensive Malayalam dataset**.
 
 The model is currently in its early stages, and ongoing training and fine-tuning with a more comprehensive dataset are necessary to enhance its performance. I will consistently provide updated revisions to the model.
 
