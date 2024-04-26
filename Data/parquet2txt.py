@@ -3,7 +3,7 @@ import os
 root_path = r"./data/CulturaX"
 parquet_lst = os.listdir(root_path)
 
-file = open('data_clm.txt', 'w', encoding='utf-8')
+f = open('data_clm.txt', 'w', encoding='utf-8')
 
 for i in parquet_lst:
     df = pd.read_parquet(os.path.join(root_path,i))
@@ -11,4 +11,4 @@ for i in parquet_lst:
         f.write(row["text"])
         f.write(row["\n"])
     
-file.close()
+f.close()
