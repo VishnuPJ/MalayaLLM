@@ -16,6 +16,10 @@ The MalayaLLM models have been improved and customized to incorporate a comprehe
 - **Source Model:** [meta-llama/Llama-2-7b-hf](https://huggingface.co/meta-llama/Llama-2-7b-hf)
 - **Training Precision:** `float16`
 
+# Model Update
+Latest MalayaLLM model trained with Gemma-2 can be found here : [MalayaLLM-Gemma2-9B](https://github.com/VishnuPJ/MalayaLLM-Gemma2-9B)
+
+
 ## Datasets Used
   * For Pretraining/Tokenization
 	* [ai4bharat](https://storage.googleapis.com/ai4bharat-public-indic-nlp-corpora/indiccorp/ml.tar.xz)
